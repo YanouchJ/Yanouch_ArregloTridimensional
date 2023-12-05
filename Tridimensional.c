@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int x, y, z;
+    int x, y, z, cont=1;
     printf("Ingrese la dimension 1: ");
     scanf("%d", &x);
     printf("Ingrese la dimension 2: ");
@@ -29,14 +29,15 @@ int main(int argc, char const *argv[])
                 for (int j = 0; j < z; j++)
                 {
 
-                    Matriz[x][i][j]=1; 
+                    Matriz[x-1][i][j]=1; 
                     
-                }printf("\n");
+                }
                 
-            } printf("\n");
-            
+            } 
+
          for (int k = 0; k < x; k++)
-        {
+        { 
+            printf("Matriz %d:\n", cont++);
             for (int i = 0; i < y; i++)
             {
                 for (int j = 0; j < z; j++)
@@ -48,17 +49,6 @@ int main(int argc, char const *argv[])
             } printf("\n");
             
         }
-
-            for (int i = 0; i < y; i++)
-            {
-                for (int j = 0; j < z; j++)
-                {
-
-                    Matriz[x][i][j]=1;
-                    
-                }printf("\n");
-                
-            } printf("\n");
             
         
         
