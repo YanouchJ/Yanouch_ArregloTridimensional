@@ -11,19 +11,32 @@ int main(int argc, char const *argv[])
     scanf("%d", &z);
     int Matriz[x][y][z];
 
-        for (int i = 0; i < x; i++)
+        for (int k = 0; k < x; k++)
         {
-            for (int j = 0; j < y; j++)
+            for (int i = 0; i < y; i++)
             {
-                for (int k = 0; k < z; k++)
+                for (int j = 0; j < z; j++)
                 {
-                    Matriz[i][j][k]=0;
+                    Matriz[k][i][j]=0;
                 }
                 
             }
             
         }
 
+         for (int k = 0; k < x; k++)
+        {
+            for (int i = 0; i < y; i++)
+            {
+                for (int j = 0; j < z; j++)
+                {
+                    printf("%d\t", Matriz[k][i][j]);
+                    
+                }printf("\n");
+                
+            } printf("\n");
+            
+        }
         
     return 0;
 }
