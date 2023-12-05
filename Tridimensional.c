@@ -21,9 +21,20 @@ int main(int argc, char const *argv[])
                 }
                 
             }
-            
+        
         }
 
+            for (int i = 0; i < y; i++)
+            {
+                for (int j = 0; j < z; j++)
+                {
+
+                    Matriz[x][i][j]=1; 
+                    
+                }printf("\n");
+                
+            } printf("\n");
+            
          for (int k = 0; k < x; k++)
         {
             for (int i = 0; i < y; i++)
@@ -37,6 +48,19 @@ int main(int argc, char const *argv[])
             } printf("\n");
             
         }
+
+            for (int i = 0; i < y; i++)
+            {
+                for (int j = 0; j < z; j++)
+                {
+
+                    Matriz[x][i][j]=1;
+                    
+                }printf("\n");
+                
+            } printf("\n");
+            
+        
         
     return 0;
 }
